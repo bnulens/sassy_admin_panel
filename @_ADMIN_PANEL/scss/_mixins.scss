@@ -1,0 +1,35 @@
+@import "variables";
+
+@mixin panel_block () {
+    background-color: #fff;
+    border: 1px solid $box-border;
+    border-radius: 8px;
+    height: 100px;
+    width: 450px;
+    margin-top: 30px;
+    h3 {
+        display: block;
+        margin-top: 30px;
+        margin-bottom: -18px;
+        margin-left: 28px;
+        font-size: 12px;
+    }
+    p {
+        display: block;
+        color:$text-color;
+        font-size: 23px;
+        margin-left: 28px;
+    }
+    @include box-shadow();
+}
+
+@mixin box-shadow (){
+    -webkit-box-shadow: 0px 0px 34px -5px rgb(164, 164, 164,1);
+    -moz-box-shadow: 0px 0px 34px -5px rgba(164, 164, 164,1);
+    box-shadow: 0px 0px 34px -5px rgba(164, 164, 164,1);
+    z-index: 5;      
+}
+
+@mixin graph_block (){
+
+}

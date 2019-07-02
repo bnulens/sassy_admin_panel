@@ -1,0 +1,101 @@
+.page-wrapper {
+  font-family: 'Nunito', sans-serif;
+  color: #5a5C69;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+  -ms-grid-columns: auto auto;
+      grid-template: auto / auto auto;
+      grid-template-areas: "sidebar Dashboard";
+}
+
+.sidebar {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: sidebar;
+}
+
+.Dashboard {
+  position: relative;
+  overflow: scroll;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: Dashboard;
+  background-color: #f8f9fc;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.Dashboard h2 {
+  margin-left: 36px;
+}
+
+.panel_board {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 32px;
+}
+
+.panel_board .panel_a, .panel_board .panel_b, .panel_board .panel_c, .panel_board .panel_d {
+  background-color: #fff;
+  border: 1px solid #EEEEEE;
+  border-radius: 8px;
+  height: 100px;
+  width: 450px;
+  margin-top: 30px;
+  -webkit-box-shadow: 0px 0px 34px -5px #a4a4a4;
+  box-shadow: 0px 0px 34px -5px #a4a4a4;
+  z-index: 5;
+  display: block;
+  border-left: 5px solid #4e73df;
+}
+
+.panel_board .panel_a h3, .panel_board .panel_b h3, .panel_board .panel_c h3, .panel_board .panel_d h3 {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: -18px;
+  margin-left: 28px;
+  font-size: 12px;
+}
+
+.panel_board .panel_a p, .panel_board .panel_b p, .panel_board .panel_c p, .panel_board .panel_d p {
+  display: block;
+  color: #5a5C69;
+  font-size: 23px;
+  margin-left: 28px;
+}
+
+.panel_board .panel_a h3, .panel_board .panel_b h3, .panel_board .panel_c h3, .panel_board .panel_d h3 {
+  color: #4e73df;
+}
+
+.panel_board .panel_b {
+  border-left: 5px solid #1cc88a;
+}
+
+.panel_board .panel_b h3 {
+  color: #1cc88a;
+}
+
+.panel_board .panel_c {
+  border-left: 5px solid #36b9cc;
+}
+
+.panel_board .panel_c h3 {
+  color: #36b9cc;
+}
+
+.panel_board .panel_d {
+  border-left: 5px solid #f6c23e;
+}
+
+.panel_board .panel_d h3 {
+  color: #f6c23e;
+}
+/*# sourceMappingURL=main.css.map */
