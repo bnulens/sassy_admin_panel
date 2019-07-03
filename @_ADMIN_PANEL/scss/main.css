@@ -17,17 +17,28 @@
 
 .Dashboard {
   position: relative;
-  overflow: scroll;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: Dashboard;
   background-color: #ffffff;
   min-height: 100vh;
-  width: 100%;
+  width: auto;
 }
 
 .Dashboard h2 {
   margin-left: 36px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: auto;
 }
 
 .panel_board {
@@ -39,7 +50,8 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 32px;
+  margin-bottom: 32px;
+  z-index: 3;
 }
 
 .panel_board .panel_a, .panel_board .panel_b, .panel_board .panel_c, .panel_board .panel_d {
@@ -47,8 +59,9 @@
   border: 1px solid #EEEEEE;
   border-radius: 8px;
   height: 100px;
-  width: 240px;
-  margin-top: 30px;
+  width: 290px;
+  margin-top: 28px;
+  margin-right: 18px;
   -webkit-box-shadow: 0px 0px 34px -5px #a4a4a4;
   box-shadow: 0px 0px 34px -5px #a4a4a4;
   z-index: 5;
@@ -62,7 +75,7 @@
   display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin-top: 32px;
+  margin-top: 28px;
   margin-bottom: -18px;
   margin-left: 28px;
   font-size: 12px;
@@ -76,6 +89,7 @@
       align-content: center;
   color: #5a5C69;
   font-size: 18px;
+  font-weight: 600;
   margin-left: 28px;
 }
 
@@ -114,20 +128,23 @@
   color: #f6c23e;
 }
 
-.panel_board .earnings-overview {
+.earnings-overview {
+  width: 70%;
+}
+
+.earnings-overview .graph-body {
   background-color: #fff;
-  width: 650px;
-  height: 300px;
+  height: 250px;
   z-index: 4;
   border: 1px solid #EEEEEE;
   border-radius: 4px;
-  margin-top: 20px;
+  margin-top: -10px;
   -webkit-box-shadow: 0px 0px 34px -5px #a4a4a4;
   box-shadow: 0px 0px 34px -5px #a4a4a4;
   z-index: 5;
 }
 
-.panel_board .graph-heading h3 {
+.earnings-overview .graph-heading h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,11 +162,11 @@
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom: 1px solid #EEEEEE;
-  margin-top: 0;
   padding-left: 30px;
+  z-index: 5;
 }
 
-.panel_board #chartContainer {
+.earnings-overview #chartContainer {
   display: block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -159,8 +176,8 @@
   background-color: #ffffff;
 }
 
-.revenue-resources .graph-heading {
-  width: 200px;
+.revenue-resources {
+  width: 25%;
 }
 
 .revenue-resources .graph-heading h3 {
@@ -181,20 +198,25 @@
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom: 1px solid #EEEEEE;
-  margin-top: 0;
   padding-left: 30px;
+  z-index: 5;
 }
 
 .revenue-resources .graph-body {
   background-color: #fff;
-  width: 650px;
-  height: 300px;
+  height: 250px;
   z-index: 4;
   border: 1px solid #EEEEEE;
   border-radius: 4px;
-  margin-top: 20px;
+  margin-top: -10px;
   -webkit-box-shadow: 0px 0px 34px -5px #a4a4a4;
   box-shadow: 0px 0px 34px -5px #a4a4a4;
   z-index: 5;
+}
+
+.graph-body .pie {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
 }
 /*# sourceMappingURL=main.css.map */
