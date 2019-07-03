@@ -219,4 +219,18 @@
   height: 100%;
   z-index: 10;
 }
+
+@media screen and (max-width: 767px) {
+  .panel_a, .panel_board .panel_a, .panel_board .panel_b, .panel_board .panel_c, .panel_board .panel_d {
+    width: 90vw;
+  }
+  .earnings-overview {
+    width: 90vw;
+    margin-right: 12px;
+  }
+  .revenue-resources {
+    width: 90vw;
+    margin-right: 12px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
